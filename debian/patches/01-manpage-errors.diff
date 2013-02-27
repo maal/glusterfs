@@ -1,0 +1,26 @@
+# Fix some manpage errors.
+
+diff -Naur glusterfs-3.2.0.orig/doc/gluster.8 glusterfs-3.2.0/doc/gluster.8
+--- glusterfs-3.2.0.orig/doc/gluster.8	2011-04-22 19:37:28.000000000 +0200
++++ glusterfs-3.2.0/doc/gluster.8	2011-05-15 13:36:35.000000000 +0200
+@@ -94,7 +94,7 @@
+ \fB\ volume log filename <VOLNAME> [BRICK] <DIRECTORY> \fB
+ Set the log directory for the corresponding volume/brick.
+ .TP
+-\fB\volume log locate <VOLNAME> [BRICK] \fB
++\fB\ volume log locate <VOLNAME> [BRICK] \fB
+ Locate the log file for corresponding volume/brick.
+ .TP
+ \fB\ volume log rotate <VOLNAME> [BRICK] \fB
+diff -Naur glusterfs-3.2.0.orig/doc/glusterfs.8 glusterfs-3.2.0/doc/glusterfs.8
+--- glusterfs-3.2.0.orig/doc/glusterfs.8	2011-04-22 19:37:28.000000000 +0200
++++ glusterfs-3.2.0/doc/glusterfs.8	2011-05-15 13:35:01.000000000 +0200
+@@ -74,7 +74,7 @@
+ Port number of volfile server.
+ .TP
+ \fB\-\-volfile\-server\-transport=TRANSPORT\fR
+-Transport type to get volume file from server (the deafult is socket).
++Transport type to get volume file from server (the default is socket).
+ .TP
+ \fB\-\-volume\-name=VOLUME\-NAME\fR
+ Volume name to be used for MOUNT-POINT (the default is top most volume in VOLUME-FILE).
